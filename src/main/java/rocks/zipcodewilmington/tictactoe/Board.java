@@ -17,25 +17,26 @@ public class Board
     {
 
 
-            for (int i = 0; i < game.length; i++) {
-        if (game[i][0] == 'X' && game[i][1] == 'X' && game[i][2] == 'X')
-        {
-            return true;
-        }
-        if (game[0][i] == 'X' && game[1][i] == 'X' && game[2][i] == 'X')
-        {
-            return true;
-        }
+            for (int i = 0; i < game.length; i++)
+            {
+                if (game[i][0] == 'X' && game[i][1] == 'X' && game[i][2] == 'X')
+                {
+                  return true;
+                }
+                if (game[0][i] == 'X' && game[1][i] == 'X' && game[2][i] == 'X')
+                {
+                   return true;
+                 }
 
-    }
-        if (game[0][0] == 'X' && game[1][1] == 'X' && game[2][2] == 'X')
-        {
-        return true;
-        }
-        if (game[0][2] == 'X' && game[1][1] == 'X' && game[2][0] == 'X')
-        {
-        return true;
-        }
+            }
+                if (game[0][0] == 'X' && game[1][1] == 'X' && game[2][2] == 'X')
+                {
+                    return true;
+                }
+                if (game[0][2] == 'X' && game[1][1] == 'X' && game[2][0] == 'X')
+                {
+                    return true;
+                }
 
         return false;
     }
